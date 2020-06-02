@@ -10,8 +10,8 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/claudiopelizari/next-level-week">
 	
-  <a href="https://www.linkedin.com/in/danielobara/">
-    <img alt="Made by DanielObara" src="https://img.shields.io/badge/made%20by-DanielObara-%2304D361">
+  <a href="https://www.linkedin.com/in/pelizari/">
+    <img alt="Made by Pelizari" src="https://img.shields.io/badge/made%20by-Pelizari-%2304D361">
   </a>
 
   <a href="https://github.com/claudiopelizari/next-level-week/commits/master">

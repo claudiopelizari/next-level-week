@@ -8,7 +8,7 @@ app.get('/users', (request, response) => {
     // JSON
 
     response.json([
-       'Diego' ,
+       'Diego',
        'Cleiton',
        'Robson',
        'Daniel'
