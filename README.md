@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center"> 
-	:construction: Next Level Week 1.0 🚀 In progress.. :construction:
+	:construction: In progress.. :construction:
 </h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/claudiopelizari/next-level-week?color=%2304D361">
