@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
 import knex from '../database/connection';
+import { Request, Response } from 'express';
 
 class PointsController {
     async index(request: Request, response: Response) {
@@ -10,14 +10,15 @@ class PointsController {
             .map(item => Number(item.trim()));
         
         const points = await knex('points')
-            .join('point_items', 'points.id', '=', 'points_items.point_id')
+            .join('point_items', 'points.id', '=', 'point_items.point_id')
             .whereIn('point_items.item_id', parsedItems)
             .where('city', String(city))
             .where('uf', String(uf))
             .distinct()
-            .select('points.*')
+            .select('points.*');
 
         return response.json({ points });
+        // return response.json({ points });
     }
 
 
@@ -61,7 +62,7 @@ class PointsController {
             latitude,
             longitude,
             city,
-            uf
+            uf,
         };
 
         const insertedIds = await trx('points').insert(point);
@@ -71,7 +72,7 @@ class PointsController {
         const pointItems = items.map((item_id: number) => {
             return {
                 item_id,
-                point_id,
+                point_id: insertedIds[0],
             };
         })
     
